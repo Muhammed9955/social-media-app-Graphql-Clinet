@@ -7,6 +7,8 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import { setContext } from "apollo-link-context";
 
 const httpLink = createHttpLink({
+  // uri: "http://localhost:5000/social-media-app-merng/us-central1/graphql",
+  // uri: "https://europe-west1-social-media-app-merng.cloudfunctions.net/graphql",
   uri: "https://whispering-badlands-31640.herokuapp.com/",
   // uri: 'http://localhost:5000'
 });

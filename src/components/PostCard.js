@@ -15,11 +15,12 @@ function PostCard({
 
   return (
     <Card fluid>
-      <Card.Content>
+      <Card.Content >
         <Image
           floated="right"
-          size="mini"
+          size="tiny"
           src="https://react.semantic-ui.com/images/avatar/large/molly.png"
+
         />
         <Card.Header>{username}</Card.Header>
         <Card.Meta as={Link} to={`/posts/${id}`}>

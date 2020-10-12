@@ -28,21 +28,25 @@ function PostForm() {
   }
 
   return (
-    <>
+    <div>
       <Form onSubmit={onSubmit}>
         <h2>Create a post:</h2>
-        <Form.Field>
+          
+        <Form.Field  style={{display:"flex ", justifyContent:"space-between", marginBottom:20}}>
           <Form.Input
             placeholder="Hi World!"
             name="body"
             onChange={onChange}
             value={values.body}
             error={error ? true : false}
+            style={{ width:"100%" ,height:50, marginRight:"1rem"}}
           />
-          <Button type="submit" color="teal">
+          <Button type="submit" color="teal"  style={{marginRight:"auto",height:"50px"}}>
             Submit
           </Button>
         </Form.Field>
+    
+
       </Form>
       {error && (
         <div className="ui error message" style={{ marginBottom: 20 }}>
@@ -51,7 +55,7 @@ function PostForm() {
           </ul>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

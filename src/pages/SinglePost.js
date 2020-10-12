@@ -63,7 +63,7 @@ function SinglePost(props) {
     } = getPost;
 
     postMarkup = (
-      <Grid>
+      <Grid fluid>
         <Grid.Row>
           <Grid.Column width={2}>
             <Image
